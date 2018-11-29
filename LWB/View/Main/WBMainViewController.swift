@@ -9,22 +9,37 @@
 import UIKit
 
 class WBMainViewController: UITabBarController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         setupChildControllers()
+        setupComposeButton()
     }
+    
+    //MARK:- 私有控件
+    private lazy var composeButton : UIButton = UIButton.cz_imageButton("tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
 }
 //类似于OC的分类 在swift中可以用来切换代码块
 //注意 和OC的分类一样 extension中不能定义属性
 // MARK: - 设置界面
 extension WBMainViewController {
+    private func setupComposeButton () {
+        tabBar.addSubview(composeButton)
+        //计算的按钮的宽度
+        let count  = children.count
+        //将向内缩进的宽度减少 盖住容错点
+        let w = tabBar.bounds.width / CGFloat(count) - 1
+        
+        //CGRectInset 正数向内 负数向外
+        composeButton.frame = tabBar.bounds.insetBy(dx: 2 * w, dy: 0)
+    }
+    
     private func setupChildControllers() {
         let array = [
             ["clsName" : "WBHomeViewController" , "title" : "首页" , "imageName" : "home"],
-            ["clsName" : "WBMessageViewController" , "title" : "首页" , "imageName" : "message_center"],
-            ["clsName" : "WBDiscoverViewController" , "title" : "首页" , "imageName" : "discover"],
-            ["clsName" : "WBProfileViewController" , "title" : "首页" , "imageName" : "profile"],
+            ["clsName" : "WBMessageViewController" , "title" : "消息" , "imageName" : "message_center"],
+            ["clsName" : "UIViewController"],
+            ["clsName" : "WBDiscoverViewController" , "title" : "发现" , "imageName" : "discover"],
+            ["clsName" : "WBProfileViewController" , "title" : "我的" , "imageName" : "profile"],
         ]
         var arrayM = [UIViewController]()
         for dict in array {
@@ -47,7 +62,13 @@ extension WBMainViewController {
         //设置图片
         vc.tabBarItem.image = UIImage(named: "tabbar_" + imageName)
         vc.tabBarItem.selectedImage = UIImage(named: "tabbar_" + imageName + "_selected")?.withRenderingMode(.alwaysOriginal)
+        //设置tabbar标题字体（大小）
+    vc.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor.orange], for: .highlighted)
+        //系统默认是12号字体 修改字体大小 要用Normal的字体大小
+        vc.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font : UIFont.systemFont(ofSize: 12)], for: UIControl.State.normal)
+        
         let nav = WBNavigationViewController(rootViewController: vc)
+        
         return nav
     }
 }
