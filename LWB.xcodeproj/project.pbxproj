@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9BEECA3B21AF84FD001C0CC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEECA3A21AF84FD001C0CC4 /* AppDelegate.swift */; };
-		9BEECA3D21AF84FD001C0CC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEECA3C21AF84FD001C0CC4 /* ViewController.swift */; };
-		9BEECA4021AF84FD001C0CC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEECA3E21AF84FD001C0CC4 /* Main.storyboard */; };
 		9BEECA4221AF8500001C0CC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BEECA4121AF8500001C0CC4 /* Assets.xcassets */; };
 		9BEECA4521AF8500001C0CC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEECA4321AF8500001C0CC4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -17,8 +15,6 @@
 /* Begin PBXFileReference section */
 		9BEECA3721AF84FD001C0CC4 /* LWB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LWB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BEECA3A21AF84FD001C0CC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9BEECA3C21AF84FD001C0CC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9BEECA3F21AF84FD001C0CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BEECA4121AF8500001C0CC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BEECA4421AF8500001C0CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BEECA4621AF8500001C0CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,8 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				9BEECA3A21AF84FD001C0CC4 /* AppDelegate.swift */,
-				9BEECA3C21AF84FD001C0CC4 /* ViewController.swift */,
-				9BEECA3E21AF84FD001C0CC4 /* Main.storyboard */,
 				9BEECA4121AF8500001C0CC4 /* Assets.xcassets */,
 				9BEECA4321AF8500001C0CC4 /* LaunchScreen.storyboard */,
 				9BEECA4621AF8500001C0CC4 /* Info.plist */,
@@ -90,6 +84,7 @@
 		9BEECA2F21AF84FD001C0CC4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WB;
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Lee;
@@ -124,7 +119,6 @@
 			files = (
 				9BEECA4521AF8500001C0CC4 /* LaunchScreen.storyboard in Resources */,
 				9BEECA4221AF8500001C0CC4 /* Assets.xcassets in Resources */,
-				9BEECA4021AF84FD001C0CC4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +129,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BEECA3D21AF84FD001C0CC4 /* ViewController.swift in Sources */,
 				9BEECA3B21AF84FD001C0CC4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +136,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9BEECA3E21AF84FD001C0CC4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9BEECA3F21AF84FD001C0CC4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9BEECA4321AF8500001C0CC4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +267,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5VFC77CT8S;
 				INFOPLIST_FILE = LWB/Info.plist;
@@ -300,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5VFC77CT8S;
 				INFOPLIST_FILE = LWB/Info.plist;
