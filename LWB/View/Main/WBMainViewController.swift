@@ -14,7 +14,6 @@ class WBMainViewController: UITabBarController {
         setupChildControllers()
         setupComposeButton()
     }
-    
     //MARK:- 私有控件
     private lazy var composeButton : UIButton = UIButton.cz_imageButton("tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
 }
@@ -31,8 +30,16 @@ extension WBMainViewController {
         
         //CGRectInset 正数向内 负数向外
         composeButton.frame = tabBar.bounds.insetBy(dx: 2 * w, dy: 0)
+        
+        composeButton.addTarget(self, action: #selector(composeStatus), for: .touchUpInside)
     }
-    
+    //MARK:- 监听方法
+    //撰写微博
+    //private 能够保证方法私有 仅在当前对象被访问
+    //@objc 荀彧这个函数在运行时通过OC的消息机制调用
+    @objc private func composeStatus() {
+        print("撰写微博")
+    }
     private func setupChildControllers() {
         let array = [
             ["clsName" : "WBHomeViewController" , "title" : "首页" , "imageName" : "home"],
