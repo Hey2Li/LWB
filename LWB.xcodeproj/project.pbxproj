@@ -31,6 +31,7 @@
 		9BEECA9F21AF9592001C0CC4 /* Bundel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEECA9D21AF9591001C0CC4 /* Bundel+Extensions.swift */; };
 		9BEECAA021AF9592001C0CC4 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEECA9E21AF9591001C0CC4 /* UIBarButtonItem+Extension.swift */; };
 		9BEECAA221AF967A001C0CC4 /* WBNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEECAA121AF967A001C0CC4 /* WBNavigationViewController.swift */; };
+		9BEECAA521AFE812001C0CC4 /* WBDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEECAA421AFE812001C0CC4 /* WBDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		9BEECA9D21AF9591001C0CC4 /* Bundel+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundel+Extensions.swift"; sourceTree = "<group>"; };
 		9BEECA9E21AF9591001C0CC4 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		9BEECAA121AF967A001C0CC4 /* WBNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBNavigationViewController.swift; sourceTree = "<group>"; };
+		9BEECAA421AFE812001C0CC4 /* WBDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBDemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		9BEECA5221AF8977001C0CC4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9BEECAA321AFE7EA001C0CC4 /* 测试 */,
 				9BEECA5521AF8A29001C0CC4 /* WBMainViewController.swift */,
 				9BEECAA121AF967A001C0CC4 /* WBNavigationViewController.swift */,
 				9BEECA5921AF8A5E001C0CC4 /* WBBaseViewController.swift */,
@@ -235,6 +238,14 @@
 				9BEECA9E21AF9591001C0CC4 /* UIBarButtonItem+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		9BEECAA321AFE7EA001C0CC4 /* 测试 */ = {
+			isa = PBXGroup;
+			children = (
+				9BEECAA421AFE812001C0CC4 /* WBDemoViewController.swift */,
+			);
+			path = "测试";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BEECA5A21AF8A5E001C0CC4 /* WBBaseViewController.swift in Sources */,
+				9BEECAA521AFE812001C0CC4 /* WBDemoViewController.swift in Sources */,
 				9BEECA8921AF90F4001C0CC4 /* NSString+CZBase64.m in Sources */,
 				9BEECA6421AF8C2A001C0CC4 /* WBProfileViewController.swift in Sources */,
 				9BEECA8C21AF90F4001C0CC4 /* NSObject+CZRuntime.m in Sources */,
