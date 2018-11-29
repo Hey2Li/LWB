@@ -11,7 +11,6 @@
 		9BEECA4221AF8500001C0CC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BEECA4121AF8500001C0CC4 /* Assets.xcassets */; };
 		9BEECA4521AF8500001C0CC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEECA4321AF8500001C0CC4 /* LaunchScreen.storyboard */; };
 		9BEECA5621AF8A29001C0CC4 /* WBMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEECA5521AF8A29001C0CC4 /* WBMainViewController.swift */; };
-		9BEECA5821AF8A45001C0CC4 /* WBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEECA5721AF8A45001C0CC4 /* WBViewController.swift */; };
 		9BEECA5A21AF8A5E001C0CC4 /* WBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEECA5921AF8A5E001C0CC4 /* WBBaseViewController.swift */; };
 		9BEECA5C21AF8AAD001C0CC4 /* WBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEECA5B21AF8AAD001C0CC4 /* WBHomeViewController.swift */; };
 		9BEECA5E21AF8ABD001C0CC4 /* WBMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEECA5D21AF8ABD001C0CC4 /* WBMessageViewController.swift */; };
@@ -29,6 +28,9 @@
 		9BEECA8E21AF90F4001C0CC4 /* NSString+CZHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEECA7F21AF90F4001C0CC4 /* NSString+CZHash.m */; };
 		9BEECA8F21AF90F4001C0CC4 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEECA8221AF90F4001C0CC4 /* NSAttributedString+CZAdditon.m */; };
 		9BEECA9021AF90F4001C0CC4 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEECA8321AF90F4001C0CC4 /* NSArray+Log.m */; };
+		9BEECA9F21AF9592001C0CC4 /* Bundel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEECA9D21AF9591001C0CC4 /* Bundel+Extensions.swift */; };
+		9BEECAA021AF9592001C0CC4 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEECA9E21AF9591001C0CC4 /* UIBarButtonItem+Extension.swift */; };
+		9BEECAA221AF967A001C0CC4 /* WBNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEECAA121AF967A001C0CC4 /* WBNavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +40,6 @@
 		9BEECA4421AF8500001C0CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BEECA4621AF8500001C0CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BEECA5521AF8A29001C0CC4 /* WBMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBMainViewController.swift; sourceTree = "<group>"; };
-		9BEECA5721AF8A45001C0CC4 /* WBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBViewController.swift; sourceTree = "<group>"; };
 		9BEECA5921AF8A5E001C0CC4 /* WBBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBBaseViewController.swift; sourceTree = "<group>"; };
 		9BEECA5B21AF8AAD001C0CC4 /* WBHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHomeViewController.swift; sourceTree = "<group>"; };
 		9BEECA5D21AF8ABD001C0CC4 /* WBMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBMessageViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +71,9 @@
 		9BEECA8321AF90F4001C0CC4 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		9BEECA8421AF90F4001C0CC4 /* NSString+CZPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZPath.h"; sourceTree = "<group>"; };
 		9BEECA9B21AF9150001C0CC4 /* Weibo-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Weibo-Bridge.h"; sourceTree = "<group>"; };
+		9BEECA9D21AF9591001C0CC4 /* Bundel+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundel+Extensions.swift"; sourceTree = "<group>"; };
+		9BEECA9E21AF9591001C0CC4 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		9BEECAA121AF967A001C0CC4 /* WBNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBNavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,7 @@
 		9BEECA4F21AF8958001C0CC4 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				9BEECA9C21AF9591001C0CC4 /* Extension */,
 				9BEECA6B21AF90F4001C0CC4 /* Additions */,
 			);
 			path = Tools;
@@ -169,7 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				9BEECA5521AF8A29001C0CC4 /* WBMainViewController.swift */,
-				9BEECA5721AF8A45001C0CC4 /* WBViewController.swift */,
+				9BEECAA121AF967A001C0CC4 /* WBNavigationViewController.swift */,
 				9BEECA5921AF8A5E001C0CC4 /* WBBaseViewController.swift */,
 			);
 			path = Main;
@@ -221,6 +226,15 @@
 				9BEECA8421AF90F4001C0CC4 /* NSString+CZPath.h */,
 			);
 			path = Additions;
+			sourceTree = "<group>";
+		};
+		9BEECA9C21AF9591001C0CC4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9BEECA9D21AF9591001C0CC4 /* Bundel+Extensions.swift */,
+				9BEECA9E21AF9591001C0CC4 /* UIBarButtonItem+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,17 +316,19 @@
 				9BEECA9021AF90F4001C0CC4 /* NSArray+Log.m in Sources */,
 				9BEECA8721AF90F4001C0CC4 /* UIScreen+CZAddition.m in Sources */,
 				9BEECA6021AF8B18001C0CC4 /* WBDiscoverViewController.swift in Sources */,
+				9BEECAA221AF967A001C0CC4 /* WBNavigationViewController.swift in Sources */,
 				9BEECA5621AF8A29001C0CC4 /* WBMainViewController.swift in Sources */,
 				9BEECA5C21AF8AAD001C0CC4 /* WBHomeViewController.swift in Sources */,
 				9BEECA8B21AF90F4001C0CC4 /* UIButton+CZAddition.m in Sources */,
-				9BEECA5821AF8A45001C0CC4 /* WBViewController.swift in Sources */,
 				9BEECA8E21AF90F4001C0CC4 /* NSString+CZHash.m in Sources */,
 				9BEECA8D21AF90F4001C0CC4 /* UIViewController+CZAddition.m in Sources */,
 				9BEECA3B21AF84FD001C0CC4 /* AppDelegate.swift in Sources */,
 				9BEECA5E21AF8ABD001C0CC4 /* WBMessageViewController.swift in Sources */,
+				9BEECAA021AF9592001C0CC4 /* UIBarButtonItem+Extension.swift in Sources */,
 				9BEECA8821AF90F4001C0CC4 /* UILabel+CZAddition.m in Sources */,
 				9BEECA8A21AF90F4001C0CC4 /* NSString+CZPath.m in Sources */,
 				9BEECA8521AF90F4001C0CC4 /* UIColor+CZAddition.m in Sources */,
+				9BEECA9F21AF9592001C0CC4 /* Bundel+Extensions.swift in Sources */,
 				9BEECA8621AF90F4001C0CC4 /* UIView+CZAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

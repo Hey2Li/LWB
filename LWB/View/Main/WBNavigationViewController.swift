@@ -1,5 +1,5 @@
 //
-//  WBViewController.swift
+//  WBNavigationViewController.swift
 //  LWB
 //
 //  Created by Lee on 2018/11/29.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WBViewController: UINavigationController {
+class WBNavigationViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
