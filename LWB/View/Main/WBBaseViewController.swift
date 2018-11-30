@@ -12,7 +12,8 @@ class WBBaseViewController: UIViewController {
     
     /// 自定义导航条
     lazy var navigationBar : WBBaseNaviBar = WBBaseNaviBar(frame: CGRect(x: 0, y: 0, width: UIScreen.cz_screenWidth(), height: 64))
-    lazy var naviItem = UINavigationItem()//自定义的导航项
+    //自定义的导航项
+    lazy var naviItem = UINavigationItem()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.cz_random()
@@ -33,5 +34,7 @@ extension WBBaseViewController {
         view.addSubview(navigationBar)
         //将item设置给bar
         navigationBar.items = [naviItem]
+        //设置navBar的渲染颜色
+        navigationBar.barTintColor = UIColor.cz_color(withHex: 0xF6F6F6)
     }
 }

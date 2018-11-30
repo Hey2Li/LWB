@@ -29,6 +29,6 @@ extension WBDemoViewController {
 //        let btn : UIButton = UIButton.cz_textButton("下一个", fontSize: 16, normalColor: UIColor.darkGray, highlightedColor: UIColor.orange)
 //        btn.addTarget(self, action: #selector(showNext), for: .touchUpInside)
 //        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: btn)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "下一个", fontSize: 16, target: self, action: #selector(showNext))
+        naviItem.rightBarButtonItem = UIBarButtonItem(title: "下一个", fontSize: 16, target: self, action: #selector(showNext))
     }
 }
