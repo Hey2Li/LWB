@@ -46,7 +46,7 @@ extension WBMainViewController {
             ["clsName" : "WBMessageViewController" , "title" : "消息" , "imageName" : "message_center"],
             ["clsName" : "UIViewController"],
             ["clsName" : "WBDiscoverViewController" , "title" : "发现" , "imageName" : "discover"],
-            ["clsName" : "WBProfileViewController" , "title" : "我的" , "imageName" : "profile"],
+            ["clsName" : "WBProfileViewController" , "title" : "我" , "imageName" : "profile"],
         ]
         var arrayM = [UIViewController]()
         for dict in array {
