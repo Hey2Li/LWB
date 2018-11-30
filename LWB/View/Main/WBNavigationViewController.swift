@@ -22,17 +22,18 @@ class WBNavigationViewController: UINavigationController {
         if children.count > 0 {
             //隐藏底部的Tabbar
             viewController.hidesBottomBarWhenPushed = true
-        }
-        //判断控制器的类型
-        if let vc = viewController as? WBBaseViewController {
-            var title = "返回"
-            //判断控制器的级数
-            if children.count == 1 {
-                //title 显示首页标题
-                title = children.first?.title ?? "返回"
+            
+            //判断控制器的类型
+            if let vc = viewController as? WBBaseViewController {
+                var title = "返回"
+                //判断控制器的级数
+                if children.count == 1 {
+                    //title 显示首页标题
+                    title = children.first?.title ?? "返回"
+                }
+                //取出自定义的naviitem
+                vc.naviItem.leftBarButtonItem = UIBarButtonItem(title: title, target: self, action: #selector(popToParent), isBack : true)
             }
-            //取出自定义的naviitem
-            vc.naviItem.leftBarButtonItem = UIBarButtonItem(title: title, target: self, action: #selector(popToParent))
         }
         super.pushViewController(viewController, animated: true)
     }
