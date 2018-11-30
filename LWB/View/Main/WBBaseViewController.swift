@@ -11,7 +11,7 @@ import UIKit
 class WBBaseViewController: UIViewController {
     
     /// 自定义导航条
-    lazy var navigationBar : UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.cz_screenWidth(), height: 84))
+    lazy var navigationBar : WBBaseNaviBar = WBBaseNaviBar(frame: CGRect(x: 0, y: 0, width: UIScreen.cz_screenWidth(), height: 64))
     lazy var naviItem = UINavigationItem()//自定义的导航项
     override func viewDidLoad() {
         super.viewDidLoad()

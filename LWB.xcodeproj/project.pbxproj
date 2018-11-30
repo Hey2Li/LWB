@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B3DC6BA21B0D84E00850588 /* WBBaseNaviBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3DC6B921B0D84E00850588 /* WBBaseNaviBar.swift */; };
 		9BEECA3B21AF84FD001C0CC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEECA3A21AF84FD001C0CC4 /* AppDelegate.swift */; };
 		9BEECA4221AF8500001C0CC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BEECA4121AF8500001C0CC4 /* Assets.xcassets */; };
 		9BEECA4521AF8500001C0CC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEECA4321AF8500001C0CC4 /* LaunchScreen.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B3DC6B921B0D84E00850588 /* WBBaseNaviBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBBaseNaviBar.swift; sourceTree = "<group>"; };
 		9BEECA3721AF84FD001C0CC4 /* LWB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LWB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BEECA3A21AF84FD001C0CC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BEECA4121AF8500001C0CC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				9BEECA5521AF8A29001C0CC4 /* WBMainViewController.swift */,
 				9BEECAA121AF967A001C0CC4 /* WBNavigationViewController.swift */,
 				9BEECA5921AF8A5E001C0CC4 /* WBBaseViewController.swift */,
+				9B3DC6B921B0D84E00850588 /* WBBaseNaviBar.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				9BEECA8921AF90F4001C0CC4 /* NSString+CZBase64.m in Sources */,
 				9BEECA6421AF8C2A001C0CC4 /* WBProfileViewController.swift in Sources */,
 				9BEECA8C21AF90F4001C0CC4 /* NSObject+CZRuntime.m in Sources */,
+				9B3DC6BA21B0D84E00850588 /* WBBaseNaviBar.swift in Sources */,
 				9BEECA8F21AF90F4001C0CC4 /* NSAttributedString+CZAdditon.m in Sources */,
 				9BEECA9021AF90F4001C0CC4 /* NSArray+Log.m in Sources */,
 				9BEECA8721AF90F4001C0CC4 /* UIScreen+CZAddition.m in Sources */,
