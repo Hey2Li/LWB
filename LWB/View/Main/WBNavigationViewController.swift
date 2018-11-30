@@ -9,6 +9,12 @@
 import UIKit
 
 class WBNavigationViewController: UINavigationController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //隐藏默认的navigationBar
+        navigationBar.isHidden = true
+    }
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         //如果不是栈低的控制器才需要隐藏 根控制器不需要
         if children.count > 0 {
