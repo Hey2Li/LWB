@@ -23,23 +23,17 @@ class WBHomeViewController: WBBaseViewController {
         navigationController?.pushViewController(vc, animated: true)
         
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 //设置UI
 extension WBHomeViewController {
     //重写父类的方法
     override func setupUI() {
         super.setupUI()
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "好友", style: .plain, target: self, action: #selector(showFriends))
+        //无法高亮
+        //navigationItem.leftBarButtonItem = UIBarButtonItem(title: "好友", style: .plain, target: self, action: #selector(showFriends))
+//        let btn : UIButton = UIButton.cz_textButton("好友", fontSize: 16, normalColor: UIColor.darkGray, highlightedColor: UIColor.orange)
+//        btn.addTarget(self, action: #selector(showFriends), for: .touchUpInside)
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: btn)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "好友", fontSize: 16, target: self, action: #selector(showFriends))
     }
 }

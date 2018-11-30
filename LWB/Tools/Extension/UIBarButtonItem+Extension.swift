@@ -1,35 +1,27 @@
 //
 //  UIBarButtonItem+Extension.swift
-//  WeiBo
+//  LWB
 //
-//  Created by apple on 2017/8/18.
-//  Copyright © 2017年 Tools. All rights reserved.
+//  Created by Lee on 2018/11/29.
+//  Copyright © 2018 Lee. All rights reserved.
 //
 
 import UIKit
 
 extension UIBarButtonItem {
     
-    
-    convenience init(title:String, fontSize:CGFloat = 15, targrt:Any?, action:Selector ,isback:Bool) {
+    /// 创建UIBarButtonItem
+    ///
+    /// - Parameters:
+    ///   - title: title
+    ///   - fontSize: fontSize 默认16号
+    ///   - target: target
+    ///   - action: action
+    convenience init(title : String, fontSize : CGFloat = 16, target : AnyObject?, action : Selector) {
+        let btn : UIButton = UIButton.cz_textButton(title, fontSize: fontSize, normalColor: UIColor.darkGray, highlightedColor: UIColor.orange)
+        btn.addTarget(target, action: action, for: .touchUpInside)
         
-        let btn: UIButton = UIButton.cz_textButton(title, fontSize: fontSize, normalColor: UIColor.black, highlightedColor: UIColor.orange)
-        
-        if isback {
-            
-            btn.setImage(UIImage.init(named: "navigationbar_back_withtext"), for: UIControl.State.normal)
-            btn.setImage(UIImage.init(named: "navigationbar_back_withtext_highlighted"), for: UIControl.State.highlighted)
-            
-            btn.sizeToFit()
-        }
-        
-        btn.addTarget(targrt, action: action, for: .touchUpInside)
-
+        //self.init实例化UIBarButtonItem
         self.init(customView: btn)
-    
-
     }
-    
-    
-  
 }
