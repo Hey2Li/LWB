@@ -46,6 +46,11 @@ extension WBMainViewController {
     //@objc 荀彧这个函数在运行时通过OC的消息机制调用
     @objc private func composeStatus() {
         print("撰写微博")
+        
+        let vc = UIViewController()
+        vc.view.backgroundColor = UIColor.cz_random()
+        let nav = UINavigationController(rootViewController: vc)
+        present(nav, animated: true, completion: nil)
     }
     private func setupChildControllers() {
         let array = [
