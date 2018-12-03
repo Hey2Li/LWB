@@ -28,11 +28,17 @@ class WBBaseViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.cz_random()
         setupUI()
+        loadData()
     }
     override var title: String? {
         didSet {
             naviItem.title = title
         }
+    }
+    
+    /// 加载数据
+    func loadData() {
+        
     }
 }
 // 设置界面
