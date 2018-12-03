@@ -20,6 +20,9 @@ class WBBaseViewController: UIViewController {
     var tableView : UITableView?
     //属性控件
     var refreshControl : UIRefreshControl?
+    /// 上拉刷新标记
+    var isPullup = false
+    
     /// 自定义导航条
     lazy var navigationBar : WBBaseNaviBar = WBBaseNaviBar(frame: CGRect(x: 0, y: 0, width: UIScreen.cz_screenWidth(), height: 64))
     //自定义的导航项
@@ -91,5 +94,20 @@ extension WBBaseViewController : UITableViewDataSource, UITableViewDelegate {
         //只是保证没有语法错误
         return UITableViewCell()
     }
-    
+    //在显示最后一行的时候做上拉刷新
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        //1.判断indexPath 是否是最后一行（indexp。section (最大)/index.row（最后一行））
+        let row = indexPath.row
+        //section
+        let section = tableView.numberOfSections - 1
+        if row < 0 || section < 0 {
+            return
+        }
+        
+        let count = tableView.numberOfRows(inSection: section)
+        //如果是最后一行 同时没有开始上拉刷新
+        if row == (count - 1) && !isPullup {
+            print("上拉刷新")
+        }
+    }
 }
