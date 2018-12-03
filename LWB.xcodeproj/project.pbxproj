@@ -96,6 +96,7 @@
 			children = (
 				9BEECA5521AF8A29001C0CC4 /* WBMainViewController.swift */,
 				9BEECAA121AF967A001C0CC4 /* WBNavigationViewController.swift */,
+				9B3DC6B921B0D84E00850588 /* WBBaseNaviBar.swift */,
 			);
 			path = "主控制器";
 			sourceTree = "<group>";
@@ -197,7 +198,6 @@
 				9B56303A21B4C45F00CDC4FC /* 主控制器 */,
 				9BEECAA321AFE7EA001C0CC4 /* 测试 */,
 				9BEECA5921AF8A5E001C0CC4 /* WBBaseViewController.swift */,
-				9B3DC6B921B0D84E00850588 /* WBBaseNaviBar.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";

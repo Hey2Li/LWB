@@ -18,7 +18,8 @@ import UIKit
 class WBBaseViewController: UIViewController {
     //表格视图  没有登录就不加载
     var tableView : UITableView?
-    
+    //属性控件
+    var refreshControl : UIRefreshControl?
     /// 自定义导航条
     lazy var navigationBar : WBBaseNaviBar = WBBaseNaviBar(frame: CGRect(x: 0, y: 0, width: UIScreen.cz_screenWidth(), height: 64))
     //自定义的导航项
@@ -39,7 +40,7 @@ class WBBaseViewController: UIViewController {
     }
     
     /// 加载数据
-    func loadData() {
+    @objc func loadData() {
         
     }
 }
@@ -59,6 +60,14 @@ extension WBBaseViewController {
         tableView?.dataSource = self
         
         tableView?.contentInset = UIEdgeInsets(top: navigationBar.bounds.height - 20, left: 0, bottom: 0, right: 0)
+        
+        //设置刷新控件
+        //1.实例化控件
+        refreshControl = UIRefreshControl()
+        //添加到视图
+        tableView?.addSubview(refreshControl!)
+        //添加监听方法
+        refreshControl?.addTarget(self, action: #selector(loadData), for: .valueChanged)
     }
 
     private func setupNavigationBar() {
