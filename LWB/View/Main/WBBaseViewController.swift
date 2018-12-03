@@ -32,10 +32,14 @@ class WBBaseViewController: UIViewController {
 extension WBBaseViewController {
     @objc func setupUI() {
         view.backgroundColor = UIColor.cz_random()
-        
         setupNavigationBar()
+        setupTableView()
     }
-    
+    private func setupTableView() {
+        tableView = UITableView(frame: view.bounds, style: .plain)
+        view.addSubview(tableView!)
+        view.insertSubview(tableView!, belowSubview: navigationBar)
+    }
     private func setupNavigationBar() {
         //添加导航条
         view.addSubview(navigationBar)
