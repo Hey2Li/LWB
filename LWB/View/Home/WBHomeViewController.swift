@@ -15,7 +15,7 @@ class WBHomeViewController: WBBaseViewController {
     private lazy var statusList = [String]()
     /// 加载数据
     override func loadData() {
-        for i in 0..<10 {
+        for i in 0..<15 {
             //将数据插入数组的顶部
             statusList.insert(i.description, at: 0)
         }

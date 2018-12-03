@@ -27,6 +27,8 @@ class WBBaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.cz_random()
+        //取消自动缩进 如果隐藏了导航栏会缩进20个点
+//        automaticallyAdjustsScrollViewInsets = false
         setupUI()
         loadData()
     }
@@ -55,6 +57,8 @@ extension WBBaseViewController {
         //设置数据源&代理 目的 子类直接实现数据源方法
         tableView?.delegate = self
         tableView?.dataSource = self
+        
+        tableView?.contentInset = UIEdgeInsets(top: navigationBar.bounds.height - 20, left: 0, bottom: 0, right: 0)
     }
 
     private func setupNavigationBar() {
