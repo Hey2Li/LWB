@@ -91,6 +91,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B56303A21B4C45F00CDC4FC /* 主控制器 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "主控制器";
+			sourceTree = "<group>";
+		};
+		9B56303B21B4C46A00CDC4FC /* visitorView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = visitorView;
+			sourceTree = "<group>";
+		};
 		9BEECA2E21AF84FD001C0CC4 = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +191,8 @@
 		9BEECA5221AF8977001C0CC4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9B56303B21B4C46A00CDC4FC /* visitorView */,
+				9B56303A21B4C45F00CDC4FC /* 主控制器 */,
 				9BEECAA321AFE7EA001C0CC4 /* 测试 */,
 				9BEECA5521AF8A29001C0CC4 /* WBMainViewController.swift */,
 				9BEECAA121AF967A001C0CC4 /* WBNavigationViewController.swift */,

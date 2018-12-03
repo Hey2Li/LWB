@@ -14,6 +14,13 @@ class WBMainViewController: UITabBarController {
         setupChildControllers()
         setupComposeButton()
     }
+    //portarit 竖屏 肖像
+    //landscape 横屏 风景画
+    //使用代码控制设备的方向 好处可以在需要横屏的时候 单独出来
+    //设置支持的方向后 当前的控制器及子控制器都会遵守这个方向
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
     //MARK:- 私有控件
     private lazy var composeButton : UIButton = UIButton.cz_imageButton("tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
 }
