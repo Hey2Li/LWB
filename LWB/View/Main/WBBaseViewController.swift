@@ -13,7 +13,7 @@ import UIKit
 //swift 利用extension可以把函数按照功能分类管理 便于阅读和维护
 //注意：
 //1,extension中不能有属性
-//2,extension不能重写父类方法 重写父类方法 是子类的职责 扩展对类的扩展
+//2,extension不能重写父类本类方法 重写父类方法 是子类的职责 扩展对类的扩展
 
 class WBBaseViewController: UIViewController {
     
