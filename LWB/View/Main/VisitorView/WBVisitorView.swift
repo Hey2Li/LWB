@@ -51,5 +51,49 @@ class WBVisitorView: UIView {
 extension WBVisitorView {
     func setupUI () {
         backgroundColor = UIColor.white
+        
+        //添加控件
+        addSubview(iconView)
+        addSubview(houseIconView)
+        addSubview(tipLabel)
+        addSubview(registerButton)
+        addSubview(loginButton)
+        
+        //取消autoresizing
+        for v in subviews {
+            v.translatesAutoresizingMaskIntoConstraints = false
+        }
+        
+        //设置自定布局
+    /* Create constraints explicitly.  Constraints are of the form "view1.attr1 = view2.attr2 * multiplier + constant" */
+
+        addConstraint(NSLayoutConstraint.init(item: iconView,
+                                              attribute: .centerX,
+                                              relatedBy: .equal,
+                                              toItem: self,
+                                              attribute: .centerX,
+                                              multiplier: 1.0,
+                                              constant: 0))
+        addConstraint(NSLayoutConstraint.init(item: iconView,
+                                              attribute: .centerY,
+                                              relatedBy: .equal,
+                                              toItem: self,
+                                              attribute: .centerY,
+                                              multiplier: 1.0,
+                                              constant: 0))
+        addConstraint(NSLayoutConstraint.init(item: houseIconView,
+                                              attribute: .centerX,
+                                              relatedBy: .equal,
+                                              toItem: iconView,
+                                              attribute: .centerX,
+                                              multiplier: 1.0,
+                                              constant: 0))
+        addConstraint(NSLayoutConstraint.init(item: houseIconView,
+                                              attribute: .centerY,
+                                              relatedBy: .equal,
+                                              toItem: iconView,
+                                              attribute: .centerY,
+                                              multiplier: 1.0,
+                                              constant: 0))
     }
 }
