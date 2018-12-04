@@ -55,7 +55,9 @@ class WBBaseViewController: UIViewController {
 extension WBBaseViewController {
     @objc func setupUI() {
         view.backgroundColor = UIColor.cz_random()
+        
         setupNavigationBar()
+        
         userLogin ? setupTableView() : setupVisitorView()
     }
     private func setupTableView() {
@@ -79,8 +81,7 @@ extension WBBaseViewController {
     
     /// 设置访客识图
     private func setupVisitorView() {
-        let visitorView = UIView(frame: view.bounds)
-        visitorView.backgroundColor = UIColor.cz_random()
+        let visitorView = WBVisitorView(frame: view.bounds)
         view.insertSubview(visitorView, belowSubview: navigationBar)
     }
     

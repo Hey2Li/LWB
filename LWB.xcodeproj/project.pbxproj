@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9B3DC6BA21B0D84E00850588 /* WBBaseNaviBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3DC6B921B0D84E00850588 /* WBBaseNaviBar.swift */; };
+		9B56303D21B61A2500CDC4FC /* WBVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B56303C21B61A2500CDC4FC /* WBVisitorView.swift */; };
 		9BEECA3B21AF84FD001C0CC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEECA3A21AF84FD001C0CC4 /* AppDelegate.swift */; };
 		9BEECA4221AF8500001C0CC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BEECA4121AF8500001C0CC4 /* Assets.xcassets */; };
 		9BEECA4521AF8500001C0CC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEECA4321AF8500001C0CC4 /* LaunchScreen.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		9B3DC6B921B0D84E00850588 /* WBBaseNaviBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBBaseNaviBar.swift; sourceTree = "<group>"; };
+		9B56303C21B61A2500CDC4FC /* WBVisitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBVisitorView.swift; sourceTree = "<group>"; };
 		9BEECA3721AF84FD001C0CC4 /* LWB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LWB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BEECA3A21AF84FD001C0CC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BEECA4121AF8500001C0CC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,11 +103,12 @@
 			path = "主控制器";
 			sourceTree = "<group>";
 		};
-		9B56303B21B4C46A00CDC4FC /* visitorView */ = {
+		9B56303B21B4C46A00CDC4FC /* VisitorView */ = {
 			isa = PBXGroup;
 			children = (
+				9B56303C21B61A2500CDC4FC /* WBVisitorView.swift */,
 			);
-			path = visitorView;
+			path = VisitorView;
 			sourceTree = "<group>";
 		};
 		9BEECA2E21AF84FD001C0CC4 = {
@@ -194,7 +197,7 @@
 		9BEECA5221AF8977001C0CC4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				9B56303B21B4C46A00CDC4FC /* visitorView */,
+				9B56303B21B4C46A00CDC4FC /* VisitorView */,
 				9B56303A21B4C45F00CDC4FC /* 主控制器 */,
 				9BEECAA321AFE7EA001C0CC4 /* 测试 */,
 				9BEECA5921AF8A5E001C0CC4 /* WBBaseViewController.swift */,
@@ -352,6 +355,7 @@
 				9BEECAA221AF967A001C0CC4 /* WBNavigationViewController.swift in Sources */,
 				9BEECA5621AF8A29001C0CC4 /* WBMainViewController.swift in Sources */,
 				9BEECA5C21AF8AAD001C0CC4 /* WBHomeViewController.swift in Sources */,
+				9B56303D21B61A2500CDC4FC /* WBVisitorView.swift in Sources */,
 				9BEECA8B21AF90F4001C0CC4 /* UIButton+CZAddition.m in Sources */,
 				9BEECA8E21AF90F4001C0CC4 /* NSString+CZHash.m in Sources */,
 				9BEECA8D21AF90F4001C0CC4 /* UIViewController+CZAddition.m in Sources */,
