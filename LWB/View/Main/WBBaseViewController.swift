@@ -16,6 +16,10 @@ import UIKit
 //2,extension不能重写父类方法 重写父类方法 是子类的职责 扩展对类的扩展
 
 class WBBaseViewController: UIViewController {
+    
+    /// 用户登录标记
+    var userLogin = false
+    
     //表格视图  没有登录就不加载
     var tableView : UITableView?
     //属性控件
@@ -30,7 +34,7 @@ class WBBaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.cz_random()
+        view.backgroundColor = UIColor.white
         //取消自动缩进 如果隐藏了导航栏会缩进20个点
 //        automaticallyAdjustsScrollViewInsets = false
         setupUI()
@@ -52,7 +56,7 @@ extension WBBaseViewController {
     @objc func setupUI() {
         view.backgroundColor = UIColor.cz_random()
         setupNavigationBar()
-        setupTableView()
+        userLogin ? setupTableView() : setupVisitorView()
     }
     private func setupTableView() {
         tableView = UITableView(frame: view.bounds, style: .plain)
@@ -72,7 +76,14 @@ extension WBBaseViewController {
         //添加监听方法
         refreshControl?.addTarget(self, action: #selector(loadData), for: .valueChanged)
     }
-
+    
+    /// 设置访客识图
+    private func setupVisitorView() {
+        let visitorView = UIView(frame: view.bounds)
+        visitorView.backgroundColor = UIColor.cz_random()
+        view.insertSubview(visitorView, belowSubview: navigationBar)
+    }
+    
     private func setupNavigationBar() {
         //添加导航条
         view.addSubview(navigationBar)
