@@ -68,6 +68,10 @@ extension WBMainViewController {
         ]
 //        测试数据格式是否正确 转化成plist数据更加直观
 //        (array as NSArray).write(toFile: "/Users/lee/Desktop/demo.plist", atomically: true)
+//        数组->JSON 序列化
+        let data = try! JSONSerialization.data(withJSONObject: array, options: [.prettyPrinted])
+        (data as NSData).write(toFile: "/Users/lee/Desktop/demo1.json", atomically: true)
+        
         var arrayM = [UIViewController]()
         for dict in array {
             arrayM.append(controller(dict: dict))

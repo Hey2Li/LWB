@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9B3DC6BA21B0D84E00850588 /* WBBaseNaviBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3DC6B921B0D84E00850588 /* WBBaseNaviBar.swift */; };
 		9B56303D21B61A2500CDC4FC /* WBVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B56303C21B61A2500CDC4FC /* WBVisitorView.swift */; };
+		9B56303F21B79C5100CDC4FC /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B56303E21B79C5100CDC4FC /* main.json */; };
 		9BEECA3B21AF84FD001C0CC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEECA3A21AF84FD001C0CC4 /* AppDelegate.swift */; };
 		9BEECA4221AF8500001C0CC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BEECA4121AF8500001C0CC4 /* Assets.xcassets */; };
 		9BEECA4521AF8500001C0CC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEECA4321AF8500001C0CC4 /* LaunchScreen.storyboard */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		9B3DC6B921B0D84E00850588 /* WBBaseNaviBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBBaseNaviBar.swift; sourceTree = "<group>"; };
 		9B56303C21B61A2500CDC4FC /* WBVisitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBVisitorView.swift; sourceTree = "<group>"; };
+		9B56303E21B79C5100CDC4FC /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		9BEECA3721AF84FD001C0CC4 /* LWB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LWB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BEECA3A21AF84FD001C0CC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BEECA4121AF8500001C0CC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		9B56303A21B4C45F00CDC4FC /* 主控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				9B56303E21B79C5100CDC4FC /* main.json */,
 				9BEECA5521AF8A29001C0CC4 /* WBMainViewController.swift */,
 				9BEECAA121AF967A001C0CC4 /* WBNavigationViewController.swift */,
 				9B3DC6B921B0D84E00850588 /* WBBaseNaviBar.swift */,
@@ -197,9 +200,9 @@
 		9BEECA5221AF8977001C0CC4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9BEECAA321AFE7EA001C0CC4 /* 测试 */,
 				9B56303B21B4C46A00CDC4FC /* VisitorView */,
 				9B56303A21B4C45F00CDC4FC /* 主控制器 */,
-				9BEECAA321AFE7EA001C0CC4 /* 测试 */,
 				9BEECA5921AF8A5E001C0CC4 /* WBBaseViewController.swift */,
 			);
 			path = Main;
@@ -329,6 +332,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B56303F21B79C5100CDC4FC /* main.json in Resources */,
 				9BEECA4521AF8500001C0CC4 /* LaunchScreen.storyboard in Resources */,
 				9BEECA4221AF8500001C0CC4 /* Assets.xcassets in Resources */,
 			);
