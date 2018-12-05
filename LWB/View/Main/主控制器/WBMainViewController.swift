@@ -53,8 +53,11 @@ extension WBMainViewController {
         present(nav, animated: true, completion: nil)
     }
     private func setupChildControllers() {
-        let array = [
-            ["clsName" : "WBHomeViewController" , "title" : "首页" , "imageName" : "home"],
+        //现在很多的应用程序中，界面的穿件都依赖网络的JSON
+        let array : [[String : Any]] = [
+            ["clsName" : "WBHomeViewController" , "title" : "首页" , "imageName" : "home" ,
+             "visitorInfo" : ["imageName" : "" , "message" : "哈哈"]
+             ],
             ["clsName" : "WBMessageViewController" , "title" : "消息" , "imageName" : "message_center"],
             ["clsName" : "UIViewController"],
             ["clsName" : "WBDiscoverViewController" , "title" : "发现" , "imageName" : "discover"],
@@ -67,9 +70,13 @@ extension WBMainViewController {
         viewControllers = arrayM
     }
     
-    private func  controller(dict : [String : String]) -> UIViewController {
+    private func  controller(dict : [String : Any]) -> UIViewController {
         //1.取得字典内容
-        guard let clsName = dict["clsName"],let title = dict["title"],let imageName = dict["imageName"],let cls = NSClassFromString(Bundle.main.namespace + "." + clsName) as? UIViewController.Type
+        guard
+            let clsName = dict["clsName"] as? String,
+            let title = dict["title"] as? String,
+            let imageName = dict["imageName"] as? String ,
+            let cls = NSClassFromString(Bundle.main.namespace + "." + clsName) as? UIViewController.Type
         else {
             return UIViewController()
         }
