@@ -83,6 +83,8 @@ extension WBBaseViewController {
     private func setupVisitorView() {
         let visitorView = WBVisitorView(frame: view.bounds)
         view.insertSubview(visitorView, belowSubview: navigationBar)
+        
+        print("访客视图\(visitorView)")
     }
     
     private func setupNavigationBar() {
