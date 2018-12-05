@@ -14,8 +14,8 @@ class WBVisitorView: UIView {
 //   如果是首页 imageName == “”
     var visitorInfo : [String : String]? {
         didSet {
-            guard let imageName = visitorInfo?["imageName"] , let message = visitorInfo?["message"]
-                else {
+            guard let imageName = visitorInfo?["imageName"] ,
+                let message = visitorInfo?["message"] else {
                     return
             }
             //设置消息

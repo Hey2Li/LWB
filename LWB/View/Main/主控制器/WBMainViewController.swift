@@ -81,7 +81,9 @@ extension WBMainViewController {
             let clsName = dict["clsName"] as? String,
             let title = dict["title"] as? String,
             let imageName = dict["imageName"] as? String ,
-            let cls = NSClassFromString(Bundle.main.namespace + "." + clsName) as? UIViewController.Type
+            let cls = NSClassFromString(Bundle.main.namespace + "." + clsName) as? WBBaseViewController.Type,
+            let visitorDict = dict["visitorInfo"] as? [String : String]
+        
         else {
             return UIViewController()
         }
@@ -89,6 +91,8 @@ extension WBMainViewController {
         //将clsName 转成 cls
         let vc = cls.init().self
         vc.title = title
+        //设置控制器的访客信息字典
+        vc.visitorInfoDictionary = visitorDict
         
         //设置图片
         vc.tabBarItem.image = UIImage(named: "tabbar_" + imageName)
