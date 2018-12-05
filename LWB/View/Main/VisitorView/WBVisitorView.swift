@@ -25,6 +25,9 @@ class WBVisitorView: UIView {
                 return
             }
             iconView.image = UIImage(named: imageName)
+            //其他控制器的访客视图不需要显示小房子/遮罩视图
+            houseIconView.isHidden = true
+            maskIconView.isHidden = true
         }
     }
     // MARK: - 构造函数
@@ -40,9 +43,9 @@ class WBVisitorView: UIView {
     // MARK: - 私有控件
     /// 懒加载属性只有调用UIKit控件的指定构造函数，其他都需要使用类型
     /// 图像视图
-    private lazy var iconView : UIImageView  = UIImageView(image: UIImage(named: "visitordiscover_feed_image_smallicon"))
+    private lazy var iconView : UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_image_smallicon"))
     /// 遮罩视图
-    private lazy var maskIconView : UIImageView  = UIImageView(image: UIImage(named: "visitordiscover_feed_mask_smallicon"))
+    private lazy var maskIconView : UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_mask_smallicon"))
     /// 小房子
     private lazy var houseIconView : UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_image_house"))
     /// 提示标签
@@ -80,6 +83,7 @@ extension WBVisitorView {
         addSubview(registerButton)
         addSubview(loginButton)
         
+        tipLabel.textAlignment = .center
         //取消autoresizing
         for v in subviews {
             v.translatesAutoresizingMaskIntoConstraints = false
