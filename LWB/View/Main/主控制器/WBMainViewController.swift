@@ -56,13 +56,18 @@ extension WBMainViewController {
         //现在很多的应用程序中，界面的穿件都依赖网络的JSON
         let array : [[String : Any]] = [
             ["clsName" : "WBHomeViewController" , "title" : "首页" , "imageName" : "home" ,
-             "visitorInfo" : ["imageName" : "" , "message" : "哈哈"]
+             "visitorInfo" : ["imageName" : "" , "message" : "关注一些人，回这里看看有什么惊喜"]
              ],
-            ["clsName" : "WBMessageViewController" , "title" : "消息" , "imageName" : "message_center"],
+            ["clsName" : "WBMessageViewController" , "title" : "消息" , "imageName" : "message_center",
+             "visitorInfo" : ["imageName" : "visitordiscover_image_message" , "message" : "登录后，被人评论你的微博，发给你的消息，都会在这里收到通知"]],
             ["clsName" : "UIViewController"],
-            ["clsName" : "WBDiscoverViewController" , "title" : "发现" , "imageName" : "discover"],
-            ["clsName" : "WBProfileViewController" , "title" : "我" , "imageName" : "profile"],
+            ["clsName" : "WBDiscoverViewController" , "title" : "发现" , "imageName" : "discover",
+             "visitorInfo" : ["imageName" : "visitordiscover_image_message" , "message" : "登录后，最新、最热微博尽在掌握，不会与实时潮流擦肩而过"]],
+            ["clsName" : "WBProfileViewController" , "title" : "我" , "imageName" : "profile",
+             "visitorInfo" : ["imageName" : "visitordiscover_image_profile" , "message" : "登录后，你的想微博、相册、个人资料会显示在这里，展示给别人"]],
         ]
+//        测试数据格式是否正确 转化成plist数据更加直观
+//        (array as NSArray).write(toFile: "/Users/lee/Desktop/demo.plist", atomically: true)
         var arrayM = [UIViewController]()
         for dict in array {
             arrayM.append(controller(dict: dict))
